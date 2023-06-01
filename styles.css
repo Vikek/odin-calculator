@@ -24,3 +24,20 @@ html, body {
     border: 2px solid black;
     border-radius: 5px;
 }
+
+#numpad {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.row {
+    display: flex;
+    flex: auto;
+}
+
+button {
+    margin: 5px;
+    flex: auto;
+    font-size: 20px;
+}
