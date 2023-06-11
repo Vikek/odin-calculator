@@ -79,7 +79,10 @@ document.querySelector(".add").addEventListener("click", function() {
 //////////////////////////////////
 
 document.querySelector(".dot").addEventListener("click", function() {
-    document.querySelector("#input").textContent += ".";
+    let input = document.querySelector("#input").textContent;
+    if(input.includes(".") || input.length < 1) {
+        return;
+    } else document.querySelector("#input").textContent += ".";
 });
 
 document.querySelector(".clear").addEventListener("click", function() {
