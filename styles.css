@@ -57,12 +57,24 @@ button {
     flex: auto;
 }
 
+button:active {
+    transform: translateY(2px);
+}
+
 button.operator {
     background-color:steelblue;
 }
 
+button.operator:hover {
+    background-color: rgb(50, 90, 120);
+}
+
 button.number {
     background-color:slategrey;
+}
+
+button.number:hover {
+    background-color: rgb(85, 95, 105);
 }
 
 button.zero {
@@ -74,10 +86,22 @@ button.clear {
     background-color:rgb(105, 25, 25);
 }
 
+button.clear:hover {
+    background-color:rgb(135, 35, 35);
+}
+
 button.equals {
     background-color: rgb(25, 105, 25);
 }
 
+button.equals:hover {
+    background-color: rgb(35, 135, 35);
+}
+
 button.dot {
     background-color: rgb(25, 25, 105);
+}
+
+button.dot:hover {
+    background-color: rgb(35, 35, 135);
 }
