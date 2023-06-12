@@ -100,7 +100,7 @@ document.querySelector(".equals").addEventListener("click", function() {
 });
 
 function checkOperation() {
-    if(hasOperated) { //if operation is true clear input window before adding new numbers
+    if(hasOperated) { //if hasOperated is true clear input window before adding new numbers
         clearInput()
         hasOperated = false;
     }
@@ -126,8 +126,6 @@ function storeValue(value) {
         a = value;
         hasOperated = true;
     }
-    console.log(a);
-    console.log(b);
 }
 
 function operate(a, b, operator) {
@@ -146,6 +144,7 @@ function operate(a, b, operator) {
             result = divide(a, b);
             break;
     }
+    result = Math.round(result * 100) / 100;
     document.querySelector("#input").textContent = result;
     resetValues();
     storeValue(result);
